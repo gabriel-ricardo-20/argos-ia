@@ -1,4 +1,4 @@
-# Argos · IA (Artificial Intelligence & Chatbot) - Global Solution 2026/2
+# Argos · IA (Artificial Intelligence & Chatbot) — Global Solution 2026/2
 
 Copiloto para o pequeno produtor rural (tema **CitizenTech**, frentes "Campo" e "Clima e emergências").
 Integrantes, RM e turma: ver `integrantes.txt`.

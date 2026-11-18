@@ -209,3 +209,22 @@ environments:
     isPrivate: false
   data:
     base_url: http://localhost:5000/api/v1
+  subEnvironments:
+    - name: Local (python api.py)
+      meta:
+        id: env_argos_local_01
+        created: 1795042000000
+        modified: 1795042000000
+        isPrivate: false
+        sortKey: 1795042000000
+      data:
+        base_url: http://localhost:5000/api/v1
+    - name: Nuvem (Render)
+      meta:
+        id: env_argos_render_01
+        created: 1795042000001
+        modified: 1795042000001
+        isPrivate: false
+        sortKey: 1795042000001
+      data:
+        base_url: https://argos-ia-api.onrender.com/api/v1
