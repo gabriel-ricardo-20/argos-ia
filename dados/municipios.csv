@@ -1,0 +1,31 @@
+cd_municipio,nm_municipio,sg_uf,ds_regiao,latitude,longitude,area_media_ha,nm_mesorregiao
+2900355,Adustina,BA,NORDESTE,-10.53333,-38.1,26256.5,Nordeste Baiano
+2923803,Paripiranga,BA,NORDESTE,-10.6875,-37.86167,25960.0,Nordeste Baiano
+2910750,Fátima,BA,NORDESTE,-10.6,-38.21667,9680.0,Nordeste Baiano
+2930766,Sítio do Quinto,BA,NORDESTE,-10.36565,-38.2028,8303.85,Nordeste Baiano
+2910800,Feira de Santana,BA,NORDESTE,-12.26667,-38.96667,7449.85,Centro Norte Baiano
+2907806,Cícero Dantas,BA,NORDESTE,-10.6,-38.38333,6632.75,Nordeste Baiano
+2916500,Itapicuru,BA,NORDESTE,-11.31667,-38.23333,6421.0,Nordeste Baiano
+2913705,Inhambupe,BA,NORDESTE,-11.78444,-38.35306,4969.0,Nordeste Baiano
+2913101,Ibititá,BA,NORDESTE,-11.54722,-41.9775,4404.55,Centro Norte Baiano
+2922250,Muquém do São Francisco,BA,NORDESTE,-12.06597,-43.54934,4160.8,Vale São-Franciscano da Bahia
+2930154,Serra do Ramalho,BA,NORDESTE,-13.54232,-43.57968,3881.15,Vale São-Franciscano da Bahia
+2926608,Ribeira do Pombal,BA,NORDESTE,-10.83444,-38.53583,3650.0,Nordeste Baiano
+2901601,Antas,BA,NORDESTE,-10.41181,-38.3312,3407.0,Nordeste Baiano
+2902104,Araci,BA,NORDESTE,-11.33333,-38.96667,3307.7,Nordeste Baiano
+2210409,São Miguel do Tapuio,PI,NORDESTE,-5.50361,-41.32333,3247.5,Centro-Norte Piauiense
+4104808,Cascavel,PR,SUL,-24.95583,-53.45528,42458.35,Oeste Paranaense
+4204202,Chapecó,SC,SUL,-27.09639,-52.61833,7380.5,Oeste Catarinense
+4302105,Bento Gonçalves,RS,SUL,-29.17139,-51.51917,758.45,Nordeste Rio-grandense
+4314100,Passo Fundo,RS,SUL,-28.26278,-52.40667,1855.0,Noroeste Rio-grandense
+4102000,Assis Chateaubriand,PR,SUL,-24.42,-53.52139,60809.85,Oeste Paranaense
+4127700,Toledo,PR,SUL,-24.71361,-53.74306,55415.0,Oeste Paranaense
+4127403,Terra Roxa,PR,SUL,-24.15667,-54.09694,47589.4,Oeste Paranaense
+4128005,Ubiratã,PR,SUL,-24.54528,-52.98778,44333.2,Centro Ocidental Paranaense
+4125704,São Miguel do Iguaçu,PR,SUL,-25.34806,-54.23778,41788.35,Oeste Paranaense
+4117909,Palotina,PR,SUL,-24.28389,-53.84,38881.5,Oeste Paranaense
+4113700,Londrina,PR,SUL,-23.31028,-51.16278,29600.9,Norte Central Paranaense
+4108809,Guaíra,PR,SUL,-24.08204,-54.24622,28831.25,Oeste Paranaense
+4126405,Sertaneja,PR,SUL,-23.03697,-50.81709,27137.25,Norte Pioneiro Paranaense
+4125308,São Jorge do Ivaí,PR,SUL,-23.43278,-52.29306,25653.0,Norte Central Paranaense
+4107504,Engenheiro Beltrão,PR,SUL,-23.79722,-52.26917,24739.35,Centro Ocidental Paranaense

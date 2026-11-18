@@ -1,0 +1,211 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Argos IA (Flask)
+meta:
+  id: wrk_362ec64b41cc4759918b81ed0c19ca5e
+  created: 1795037257556
+  modified: 1795037257556
+  description: ""
+collection:
+  - url: "{{ _.base_url }}/saude"
+    name: 1. Saúde da API
+    meta:
+      id: req_98d2129d39bf42acb16fdd3a1bf0f30d
+      created: 1795037257559
+      modified: 1795037257559
+      isPrivate: false
+      description: 'Esperado: 200 {"status": "ok"}'
+      sortKey: -999
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/risco-quebra"
+    name: "2. Risco de quebra - ano seco: Araci (BA) 2023"
+    meta:
+      id: req_a26c9d42ff40445b8f1189239b59b0f6
+      created: 1795037257562
+      modified: 1795037257562
+      isPrivate: false
+      description: "Linha real do dataset_argos.csv (quebra real = 1). Esperado: ALTO, 0.62"
+      sortKey: -998
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "chuva_total_mm": 482.2,
+          "temp_media": 25.67,
+          "temp_max_media": 31.42,
+          "dias_acima_35": 48,
+          "maior_seq_seca": 26,
+          "oni": 0.81,
+          "regiao_sul": 0,
+          "media_5a": 669.6
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/produtividade"
+    name: "3. Produtividade - ano seco: Araci (BA) 2023"
+    meta:
+      id: req_9e47de7280db4e45bb5decbc965fcef5
+      created: 1795037257563
+      modified: 1795037257563
+      isPrivate: false
+      description: "Real: 103 kg/ha. Esperado: 959.2 (a regressão prevê o ano típico)"
+      sortKey: -997
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "chuva_total_mm": 482.2,
+          "temp_media": 25.67,
+          "temp_max_media": 31.42,
+          "dias_acima_35": 48,
+          "maior_seq_seca": 26,
+          "oni": 0.81,
+          "regiao_sul": 0,
+          "media_5a": 669.6
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/risco-quebra"
+    name: "4. Risco de quebra - ano normal no Sul: Chapecó (SC) 2020"
+    meta:
+      id: req_ab23106cbb96461d93953761481fd111
+      created: 1795037257564
+      modified: 1795037257564
+      isPrivate: false
+      description: "Linha real (quebra real = 0). Esperado: BAIXO, 0.12"
+      sortKey: -996
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "chuva_total_mm": 1550.5,
+          "temp_media": 19.47,
+          "temp_max_media": 24.82,
+          "dias_acima_35": 1,
+          "maior_seq_seca": 18,
+          "oni": -0.21,
+          "regiao_sul": 1,
+          "media_5a": 9000.0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/produtividade"
+    name: "5. Produtividade - ano normal no Sul: Chapecó (SC) 2020"
+    meta:
+      id: req_1bd00a2f49354adb8e6358ec029f0f71
+      created: 1795037257565
+      modified: 1795037257565
+      isPrivate: false
+      description: "Real: 8.880 kg/ha. Esperado: 9125.1"
+      sortKey: -995
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "chuva_total_mm": 1550.5,
+          "temp_media": 19.47,
+          "temp_max_media": 24.82,
+          "dias_acima_35": 1,
+          "maior_seq_seca": 18,
+          "oni": -0.21,
+          "regiao_sul": 1,
+          "media_5a": 9000.0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/risco-quebra"
+    name: 6. Erro 400 - falta o campo oni
+    meta:
+      id: req_8ea573b5b56b4ab89b1c386e4f37201a
+      created: 1795037257566
+      modified: 1795037257566
+      isPrivate: false
+      description: 'Esperado: 400 {"erro": "Falta o campo oni"}'
+      sortKey: -994
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "chuva_total_mm": 482.2,
+          "temp_media": 25.67,
+          "temp_max_media": 31.42,
+          "dias_acima_35": 48,
+          "maior_seq_seca": 26,
+          "regiao_sul": 0,
+          "media_5a": 669.6
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_884318e650bc40375702dd376a83d6543178f4c0
+    created: 1795037257781
+    modified: 1795037257781
+environments:
+  name: Base Environment
+  meta:
+    id: env_e54012b9d99c4e2b869636f8287d4cdd
+    created: 1795037257558
+    modified: 1795037257558
+    isPrivate: false
+  data:
+    base_url: http://localhost:5000/api/v1
